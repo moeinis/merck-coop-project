@@ -19,10 +19,8 @@ This repository documents a supervised machine learning approach to detect inorg
 
 ## Reports (Interactive)
 
-- [Exploratory Data Analysis (EDA)](./Bot%20Detection%20EDA%20(2).html)
-- [Pre-processing](./Pre-processing.html)
-- [Cluster Analysis](./Cluster%20analysis.html)
-- [K-Means Clustering](./K-Means_Clustering.html)
+- [Full Article (report)](./Detection%20of%20Bot%20inorganic%20engagement%20on%20marketing%20emails%20using.pdf)
+
 
 ## Licensing
 
