@@ -1,19 +1,28 @@
-# Merck Co-Op Project
+# Bot Detection for Email Engagement  
+**Merck & Co. | Data Science Co-op Project | Moein Izadi**
 
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC--BY--NC--4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+This project focuses on detecting inorganic email engagement behavior—such as bot-generated opens and clicks—in digital marketing campaigns targeting healthcare professionals (HCPs). Building on prior work by Merck's teams in Germany and the Netherlands, the solution integrates rule-based filtering, honeypot link tracking, and supervised machine learning to improve downstream engagement analytics.
 
-**Short Description:**  
-A supervised ML pipeline that detects inorganic (bot-driven) email opens and clicks among healthcare professionals by combining rule-based heuristics and honeypot link labeling into a single, high-accuracy classifier.
+## Project Highlights
 
-## Introduction
+- Applied rule-based time filters and honeypot detection to label bot interactions.
+- Developed classification models (XGBoost, Random Forest, KNN) to distinguish human from bot clicks.
+- Used clustering and anomaly detection to uncover behavioral patterns in engagement data.
+- Enhanced targeting models for customer journey optimization and next-best action systems.
 
-Customer email engagement is one of the most efficient ways to reach healthcare professionals (HCPs). However, not all recorded opens and clicks represent genuine human behavior—some are triggered by bots.
+## HTML Reports
 
-This project builds on internal R&D at Merck to develop a robust ML-based classifier for distinguishing human vs. bot interactions in email logs. By integrating labeling signals from rule-based filters and honeypot links, we trained supervised models to detect inorganic engagement with high reliability.
-
-## Keywords
-Digital marketing · Bot detection · Machine learning · Inorganic engagement
+- [Exploratory Data Analysis (EDA)](./Bot%20Detection%20EDA%20(2).html)
+- [Pre-processing](./Pre-processing.html)
+- [Cluster Analysis](./Cluster%20analysis.html)
+- [K-Means Clustering](./K-Means_Clustering.html)
 
 ## License
-This project is licensed under the [CC BY-NC 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/).  
-© 2025 Moein Izadi
+
+This project is licensed under the terms of the [MIT License](./LICENSE).  
+You are free to use, modify, and distribute this code with proper attribution.
+
+## Citation
+
+Project completed during a data science co-op at Merck & Co.  
+May be cited or referenced as part of a professional portfolio or resume.
