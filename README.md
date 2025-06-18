@@ -1,28 +1,33 @@
-# Bot Detection for Email Engagement  
-**Merck & Co. | Data Science Co-op Project | Moein Izadi**
+# Bot Detection in Email Engagement  
+**Moein Izadi | Merck Data Science Co-op Project**
 
-This project focuses on detecting inorganic email engagement behavior—such as bot-generated opens and clicks—in digital marketing campaigns targeting healthcare professionals (HCPs). Building on prior work by Merck's teams in Germany and the Netherlands, the solution integrates rule-based filtering, honeypot link tracking, and supervised machine learning to improve downstream engagement analytics.
+This repository documents a supervised machine learning approach to detect inorganic email engagement (bot opens and clicks) in healthcare marketing. The work builds on internal business-rule-based systems and honeypot link deployment strategies developed at Merck Germany and the Netherlands. The final solution integrates labeled data, extensive EDA, time-based feature engineering, and classification modeling.
 
-## Project Highlights
+## Project Overview
 
-- Applied rule-based time filters and honeypot detection to label bot interactions.
-- Developed classification models (XGBoost, Random Forest, KNN) to distinguish human from bot clicks.
-- Used clustering and anomaly detection to uncover behavioral patterns in engagement data.
-- Enhanced targeting models for customer journey optimization and next-best action systems.
+- **Context:** Inorganic engagement undermines the accuracy of customer journey analytics. This project addresses this using labeled data and predictive ML.
+- **Goal:** Automatically identify bot behavior in email click/open data using labeled honeypot activity and engineered time features.
+- **Tools Used:** Python (PyCaret, scikit-learn), AWS SageMaker, Jupyter Notebooks, HTML exports
 
-## HTML Reports
+## Key Contributions
+
+- Integrated multiple labeling strategies (business rules + honeypots)
+- Engineered time-differential features (e.g., Sent-to-Open, Sent-to-Click)
+- Evaluated 13+ ML models with cross-validation and stratified splits
+- Investigated and mitigated model leakage risks
+- Deployed models with >95% AUC on honeypot-only validation data
+
+## Reports (Interactive)
 
 - [Exploratory Data Analysis (EDA)](./Bot%20Detection%20EDA%20(2).html)
 - [Pre-processing](./Pre-processing.html)
 - [Cluster Analysis](./Cluster%20analysis.html)
 - [K-Means Clustering](./K-Means_Clustering.html)
 
-## License
+## Licensing
 
-This project is licensed under the terms of the [MIT License](./LICENSE).  
-You are free to use, modify, and distribute this code with proper attribution.
+This repository is licensed under the [MIT License](./LICENSE). You may use this code and methodology with attribution.
 
 ## Citation
 
-Project completed during a data science co-op at Merck & Co.  
-May be cited or referenced as part of a professional portfolio or resume.
+> Izadi, M., Giri, S., Brown, J., Shi, C. (2022). *Detection of Bot Inorganic Engagement on Marketing Emails Using Supervised Machine Learning Algorithms*. Merck Data Science & Analytics Solutions.
