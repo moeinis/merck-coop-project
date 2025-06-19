@@ -18,8 +18,8 @@ This repository documents a supervised machine learning approach to detect inorg
 - Deployed models with >95% AUC on honeypot-only validation data
 
 ## Reports (Interactive)
-
 - [Full Article (report)](./Detection%20of%20Bot%20inorganic%20engagement%20on%20marketing%20emails%20using.pdf)
+
 
 
 ## Licensing
